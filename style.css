@@ -195,4 +195,79 @@ img {vertical-align: middle;}
     background-color: #f1f1f1;
     color: black;
 }
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+
+    /* Center align the links and adjust font size */
+    .links {
+        text-align: center;
+    }
+    a {
+        font-size: 20px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    /* Adjust the layout of the unordered list */
+    ul {
+        display: block;
+        margin: 5px;
+        padding: 0;
+    }
+    li {
+        font-size: 20px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    /* Adjust the font size and margin of the headings */
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the padding of the main content */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust the padding of the hero section */
+    .hero {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the margin of the list items in the projects section */
+    .projects li {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Adjust the font size of the caption text */
+    .text {
+        font-size: 16px;
+        padding: 6px 8px;
+        bottom: 6px;
+    }
+    .text1 {
+        font-size: 16px;
+        padding: 6px 8px;
+        bottom: 6px;
+    }
+
+    /* Adjust the font size and padding of the next and previous buttons */
+    .prev, .next {
+        font-size: 14px;
+        padding: 8px;
+        margin-top: -18px;
+    }
+}
 
