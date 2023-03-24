@@ -1,3 +1,7 @@
+.links{
+    align-items: center;
+    text-align: center;
+}
 a{
     font-size: 24px;
     margin: 8px;
@@ -7,6 +11,8 @@ a{
     background-color: #f9f9f9;
     color: #758ce5;
 }
+
+
 ul {
     align-items: center;
     display: flex;

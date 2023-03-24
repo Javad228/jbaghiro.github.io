@@ -6,44 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        * {box-sizing: border-box}
-        .mySlides1, .mySlides2 {display: none}
-        img {vertical-align: middle;}
 
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* Next & previous buttons */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a grey background color */
-        .prev:hover, .next:hover {
-            background-color: #f1f1f1;
-            color: black;
-        }
     </style>
 
 </head>
@@ -53,17 +16,16 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="experience.html">Experience</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Here you will find information about my projects and experience.</p>
+        <h1>Four Projects Listed Below</h1>
+
     </section>
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <ul>
             <li>
                 <h3>Controlled Chaos</h3>
@@ -98,7 +60,7 @@
     <!-- Slideshow container -->
     <div id="controlled">
         <div id="information">
-        <h2>Controlled Chaos</h2>
+        <h1>Controlled Chaos</h1>
         <p>This was a group project lasting 3 Sprints over the course of the Fall semester</p>
         <h3>Tasks (User Stories) Implemented by me personally:</h3>
         <ul>
@@ -154,7 +116,9 @@
         <br>
         <br>
         <br>
-        <a href="https://github.com/Javad228/Controlled-Chaos-GameDev"> Link to the Github Repository</a>
+        <div class="links">
+        <a href="https://github.com/Javad228/Controlled-Chaos-GameDev">Link to the Github Repository</a>
+        </div>
         <br>
 
     </div>
@@ -165,7 +129,7 @@
 
 
     <div id="school">
-        <h2>School Website in Django</h2>
+        <h1>School Website in Django</h1>
         <p>School Website for Attendance written in Django</p>
         <ul>
             <li>Used PostgreSQL for database management</li>
@@ -195,7 +159,9 @@
         <br>
         <br>
         <br>
+        <div class="links">
         <a href="https://github.com/Javad228/djangoSchoolWebsite"> Link to the Github Repository</a>
+        </div>
         <br>
         <br>
     </div>
@@ -208,7 +174,7 @@
 
     <div id="unity">
         <div id="information1">
-            <h2>2D Platformer</h2>
+            <h1>2D Platformer</h1>
             <p>This is a 2D Platformer made in Unity game engine. The code is written in C# and 95% of the assets are hand drawn</p>
             <h3>Implemented Functions</h3>
             <ul>
@@ -256,7 +222,9 @@
         <br>
         <br>
         <br>
+        <div class="links">
         <a href="https://github.com/Javad228/gameDev1"> Link to the Github Repository</a>
+        </div>
         <br>
         <br>
         <br>
@@ -264,7 +232,7 @@
         <br>
         <br>
         <div id="pathfinding">
-            <h2>Illustrating Pathfinding</h2>
+            <h1>Illustrating Pathfinding</h1>
             <p>Very similar to the project above (Controlled Chaos)</p>
             <ul>
                 <li>Ability to change between pathfinding algorithms</li>
@@ -272,7 +240,6 @@
             </ul>
             <br>
             <br>
-
             <a href="https://github.com/Javad228/Pathfinding-Game"> Link to the Github Repository</a>
             <br>
             <br>
