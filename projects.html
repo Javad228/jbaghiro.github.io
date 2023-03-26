@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <style>
 
     </style>
 
 </head>
+<a id="button"></a>
+
 <body>
+
+
+<!-- Back to top button -->
+
 <header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -278,6 +289,23 @@
         }
         x[slideIndex[no]-1].style.display = "block";
     }
+
+    var btn = $('#button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
 </script>
+
 </body>
 </html>
