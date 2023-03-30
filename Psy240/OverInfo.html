@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #595858;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #232323;
+        }
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Block styles */
+        .block {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Clearfix to prevent floats from overlapping */
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .block {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Overconfidence Phenomenon</h1>
+</header>
+<div class="block">
+    <h2>If you clicked >50% </h2>
+    <p>You demonstrated the overconfidence phenomenon. The game is actually unbeatable as both of the doors are locked so no matter how much you try the bear will always catch you </p>
+</div>
+<div class="block">
+    <h2>Overconfidence Phenomenon</h2>
+    <p>The tendency to be more confident than correct. To overestimate the accuracy of one’s beliefs.</p>
+</div>
+<div class="clearfix"></div>
+<button onclick=window.location.href='SelfServing.html' class="button" >Continue</button>
+</body>
+</html>

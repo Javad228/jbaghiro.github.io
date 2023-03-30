@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    body {
+      align-items: center;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #595858;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    /* Button hover effect */
+    .button:hover {
+      background-color: #232323;
+    }
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Block styles */
+    .block {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Clearfix to prevent floats from overlapping */
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .block {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Hindsight Bias</h1>
+</header>
+<div class="block">
+  <h2>If you clicked Yes... </h2>
+  <p>You demonstrated hindsight bias. You thought that you knew which door was the safe option and yet you chose the other one anyways. </p>
+</div>
+<div class="block">
+  <h2>Hindsight Bias</h2>
+  <p>The tendency to exaggerate, after learning an outcome, one's ability to have foreseen how something turned out. Also known as the I-knew-it-all-along phenomenon.</p>
+</div>
+<div class="clearfix"></div>
+<button onclick=window.location.href='SelfServing.html' class="button" >Continue</button>
+</body>
+</html>
