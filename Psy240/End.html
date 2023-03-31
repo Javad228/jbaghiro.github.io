@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+    .circle {
+        will-change: border-radius;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: translateZ(0);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .animated-text {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #ffffff;
+        animation-name: animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes move {
+        0% {
+            left: 0;
+            top: 0;
+        }
+        25% {
+            left: calc(100% - 50px);
+            top: 0;
+        }
+        50% {
+            left: calc(100% - 50px);
+            top: calc(100% - 50px);
+            border-radius: 0%;
+        }
+        75% {
+            left: 0;
+            top: calc(100% - 50px);
+            border-radius: 0%;
+        }
+        100% {
+            left: 0;
+            top: 0;
+        }
+    }
+
+    body {
+        background-color: #333333;
+    }
+    .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+    }
+</style>
+<head>
+    <title>Circle Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="animated-text">The End</h1>
+</div>
+<div class="container1">
+    <div class="circle"></div>
+</div>
+
+</body>
+</html>
