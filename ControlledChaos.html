@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="eachProj.css">
+
+</head>
+<body>
+<div id="controlled">
+  <div id="information">
+    <h1>Controlled Chaos</h1>
+    <p>This was a group project lasting 3 Sprints over the course of the Fall semester</p>
+    <h3>Tasks (User Stories) Implemented by me personally:</h3>
+    <ul>
+      <li>Ability to attack and damage enemies</li>
+      <li>Healthbars above enemies</li>
+      <li>Implemented explosive weapons such as bombs which cause damage in a wide circle</li>
+      <li>Implemented the inventory and the ability descriptions of items</li>
+      <li>Implemented 2 enemy types the wizard which shoots ranged projectiles and the skeleton which does close range damage</li>
+      <li>A* Pathfinding for all enemies. Tweaked for each specific enemy. </li>
+      <li>Implemented the shop which contains multiple chest that can be opened by spending coins.</li>
+      <li>Each chest retrieves a random item for a specified pool of items</li>
+      <li>A pause menu that can be used to send feedback to the developers</li>
+      <li>An option to choose between different character before entering the game</li>
+    </ul>
+  </div>
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="controlled0.png" style="width:100%">
+      <div class="text"><strong>Title Screen</strong></div>
+    </div>
+    <div class="mySlides1">
+      <img src="controlled1.png" style="width:100%">
+      <div class="text"><strong>Skeletons following player with A* pathfinding</strong></div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="controlled2.png" style="width:100%">
+      <div class="text"><strong>Different environments and characters</strong></div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="controlled3.png" style="width:100%">
+      <div class="text1"><strong>Different environments and traps</strong></div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="controlled4.png" style="width:100%">
+      <div class="text"><strong> The shop with various chests with different item pools</strong> </div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="controlled5.png" style="width:100%">
+      <div class="text"><strong>The inventory with the ability to equip weapons</strong></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="links">
+    <a href="https://github.com/Javad228/Controlled-Chaos-GameDev">Link to the Github Repository</a>
+  </div>
+  <br>
+
+</div>
+<script>
+  let slideIndex = [1,1,1];
+  let slideId = ["mySlides1", "mySlides2","mySlides3"]
+  showSlides(1, 0);
+
+
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+  }
+
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 50) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+</script>
+</body>
+</html>
