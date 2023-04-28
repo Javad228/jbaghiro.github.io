@@ -183,9 +183,9 @@ i {
 
 @media(max-width: 1000px) {
     body {
-        align-items: flex-start;
+        /*align-items: flex-start;*/
         justify-content: center;
-        overflow: auto;
+        /*overflow: auto;*/
 
     }
 
@@ -196,8 +196,11 @@ i {
     }
 
     .card {
+        height: 260px;
         flex-shrink: 1;
-        width: calc(50% - 4px);
+        width: 50%;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
 
