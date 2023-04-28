@@ -181,6 +181,12 @@ img {vertical-align: middle;}
     }
 }
 
+@media (max-width: 1000px) {
+    .slideshow-container{
+        max-width: 90%;
+    }
+}
+
 body{
     align-items: center;
     background-color: var(--bg-color);
