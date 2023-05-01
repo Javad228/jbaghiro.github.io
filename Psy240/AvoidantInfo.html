@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    body {
+      align-items: center;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #595858;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    /* Button hover effect */
+    .button:hover {
+      background-color: #232323;
+    }
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Block styles */
+    .block {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Clearfix to prevent floats from overlapping */
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .block {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Cognitive Dissonance</h1>
+</header>
+<div class="block">
+  <h2>If you clicked Yes... </h2>
+  <p>You demonstrated avoidant attachment. You were already betrayed by one other group and when asked to give up your food you accepted. You disregarded your own struggles and needs in order to maintain peace.</p>
+</div>
+<div class="block">
+  <h2>If you clicked No... </h2>
+  <p>You demonstrated social-exchange theory. You knew that joining the group would mean giving up your food so you knew that you would ultimately lose in this transaction. Thus you rejected the offer.</p>
+</div>
+<div class="block">
+  <h2>Avoidant Attachment</h2>
+  <p>Attachments marked by discomfort over, or resistance to, being close to others. An insecure attachment style</p>
+</div>
+<div class="block">
+  <h2>Social-Exchange Theory</h2>
+  <p>The theory that human interactions are transactions that aim to maximize one's rewards and minimize one's costs.</p>
+</div>
+<div class="clearfix"></div>
+<button onclick=window.location.href='PeerConformity.html' class="button" >Continue</button>
+</body>
+</html>
