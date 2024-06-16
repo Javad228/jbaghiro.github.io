@@ -1,6 +1,3 @@
-Sure! Here's a detailed README file for your GitHub repository:
-
----
 
 # Acertinity UI Components Demo in Next.js
 
