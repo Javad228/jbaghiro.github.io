@@ -120,6 +120,9 @@ body {
     padding: 10px;
     position: absolute;
     z-index: 2;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
@@ -136,6 +139,7 @@ i {
 }
 
 .card-image {
+
     align-items: center;
     display: flex;
     height: 140px;

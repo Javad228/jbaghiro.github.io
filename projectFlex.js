@@ -47,7 +47,10 @@ document.getElementsByClassName("card")[1].onmouseenter = e => {
         let path ="url(student"+slideIndex+".png)";
 
         document.getElementsByClassName("card")[1].style.backgroundImage = path;
-        document.getElementsByClassName("card")[1].style.backgroundSize = "200% 110%";
+        document.getElementsByClassName("card")[1].style.backgroundSize = "contain";
+        document.getElementsByClassName("card")[1].style.backgroundRepeat= "no-repeat";
+        document.getElementsByClassName("card")[1].style.backgroundPosition= "center";
+
         document.getElementsByClassName("card")[1].style.backgroundPositionX = "20%";
         timeout = setTimeout(showSlides, 1200);
         slideIndex++;
