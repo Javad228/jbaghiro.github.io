@@ -109,6 +109,7 @@ export const ContainerScroll = ({
     const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
     const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
     const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
+    // @ts-ignore
     const AnimatedSectionFront = ({ title }) => (
         <motion.div
             className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
@@ -128,6 +129,7 @@ export const ContainerScroll = ({
         </motion.div>
     );
 
+    // @ts-ignore
     const AnimatedSectionHost = ({ title }) => (
         <motion.div
             className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
@@ -147,6 +149,7 @@ export const ContainerScroll = ({
         </motion.div>
     );
 
+    // @ts-ignore
     const AnimatedSectionBack = ({ title }) => (
         <motion.div
             className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
@@ -166,6 +169,7 @@ export const ContainerScroll = ({
         </motion.div>
     );
 
+    // @ts-ignore
     const AnimatedSectionDB = ({ title }) => (
         <motion.div
             className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
