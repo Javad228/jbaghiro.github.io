@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { MacbookScroll } from "../../components/ui/macbook-scroll";
+import { MacbookScroll } from "@/components/ui/macbook-scroll";
 
 const MacbookScrollDemo: React.FC = () => {
     return (
@@ -14,17 +14,6 @@ const MacbookScrollDemo: React.FC = () => {
                 }
                 src={`/emserverdemo.png`}
                 showGradient={true}
-                endLabel={
-                    <span>
-                        Developed a web server featuring 13 algorithms in structure modeling
-                        and molecular map refinement, which is now being used by over{" "}
-                        <b style={{ fontSize: "1.25em", fontWeight: "bold" }}>450 users</b>{" "}
-                        with over{" "}
-                        <b style={{ fontSize: "1.25em", fontWeight: "bold" }}>
-                            3100 submissions
-                        </b>
-                    </span>
-                }
             />
         </div>
     );
