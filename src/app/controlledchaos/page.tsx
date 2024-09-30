@@ -5,7 +5,7 @@ import { MacbookScroll } from "@/components/ui/macbook-scroll";
 
 const MacbookScrollDemo: React.FC = () => {
     return (
-        <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+        <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full hidden sm:block">
             <MacbookScroll
                 title={
                     <span>
@@ -41,13 +41,14 @@ const Badge: React.FC<{ className?: string }> = ({ className }) => {
 const EMSuiteDemo: React.FC = () => {
     return (
         <div className="space-y-8 dark:bg-[#0B0B0F]">
-            <MacbookScrollDemo />
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden w-2/4 mb-[30px] mx-auto">
-                <div className="p-6">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <MacbookScrollDemo/>
+            <div
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden w-full sm:w-3/4 md:w-2/4 mb-8 mx-auto">
+                <div className="p-4 sm:p-6">
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                         Key Features
                     </h2>
-                    <div className="grid grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
                         <ul className="space-y-2">
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -55,7 +56,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Track your workouts with ease</span>
+                                <span>Enemy AI with Pathfinding and Basic Intelligence</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -63,7 +64,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Analyze your progress over time</span>
+                                <span>Dynamic Hitboxes based on Animation and Direction</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -71,7 +72,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Customizable exercise routines</span>
+                                <span>Coin and Shop System</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -79,7 +80,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Gamified Achievements</span>
+                                <span>Ranged Enemies and Projectiles</span>
                             </li>
                         </ul>
                         <ul className="space-y-2">
@@ -89,7 +90,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Integration with fitness devices</span>
+                                <span>Inventory system with Pick-up functionality</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -97,7 +98,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Personalized goal setting</span>
+                                <span>Save and Load game functionality</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -105,7 +106,7 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Detailed workout history</span>
+                                <span>Boss Battles with Unique Attack patterns</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"
@@ -113,13 +114,22 @@ const EMSuiteDemo: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                           d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Social Media aspect with workout sharing</span>
+                                <span>Written from scratch with Java using no frameworks</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <br/>
+            <div className="flex justify-center space-x-4">
+                <a href="https://github.com/Javad228/WiseConnect" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="https://img.shields.io/badge/Go%20to%20GitHub-Black?style=for-the-badge&logo=github&logoColor=white"
+                        alt="Go to GitHub"/>
+                </a>
+
+
+            </div>
         </div>
     );
 }

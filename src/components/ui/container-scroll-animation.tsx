@@ -191,7 +191,7 @@ export const ContainerScroll = ({
 
     return (
         <div
-            className="h-[80rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+            className="h-[42rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
             ref={containerRef}
         >
             <div
@@ -281,7 +281,7 @@ export const Cardb = ({
                 scale,
 
             }}
-            className="max-w-lg mx-auto ml-6 h-[30rem] md:h-[40rem] w-full rounded-[30px] bg-transparent"
+            className="max-w-lg mx-auto ml-6 h-[30rem] md:h-[40rem] w-full rounded-[30px] bg-transparent hidden md:block"
         >
             <div className="h-full w-full overflow-auto rounded-2xl md:rounded-2xl md:p-4">
                 {children}
