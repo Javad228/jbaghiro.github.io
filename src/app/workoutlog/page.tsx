@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { ContainerScroll } from "../../components/ui/container-scroll-animation";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
-import {MacbookScroll} from "../../components/ui/macbook-scroll";
+import {MacbookScroll} from "@/components/ui/macbook-scroll";
 export function MacbookScrollDemo() {
     return (
         <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
