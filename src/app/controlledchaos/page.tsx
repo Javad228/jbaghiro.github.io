@@ -120,16 +120,14 @@ const EMSuiteDemo: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <br/>
             <div className="flex justify-center space-x-4">
                 <a href="https://github.com/Javad228/WiseConnect" target="_blank" rel="noopener noreferrer">
                     <img
                         src="https://img.shields.io/badge/Go%20to%20GitHub-Black?style=for-the-badge&logo=github&logoColor=white"
                         alt="Go to GitHub"/>
                 </a>
-
-
             </div>
+            <br/>
         </div>
     );
 }
