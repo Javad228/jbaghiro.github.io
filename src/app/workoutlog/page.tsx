@@ -27,7 +27,7 @@ export function MacbookScrollDemo() {
 }
 export default function WorkoutLoggerDemo() {
     return (
-        <div>
+        <div className="mx-4">
             <div className="flex flex-col overflow-hidden h-auto">
                 <ContainerScroll
                     titleComponent={
@@ -51,10 +51,12 @@ export default function WorkoutLoggerDemo() {
                     />
                 </ContainerScroll>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden w-2/4 mx-auto">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden w-full sm:w-3/4 md:w-2/4 mb-8 mx-auto">
                 <div className="p-6">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Key Features</h2>
-                    <div className="grid grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                        Key Features
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
                         <ul className="space-y-2">
                             <li className="flex items-start">
                                 <svg className="w-4 h-4 mt-1 mr-2 text-green-500 flex-shrink-0" fill="none"

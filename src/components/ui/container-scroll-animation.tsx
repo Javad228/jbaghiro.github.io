@@ -111,12 +111,11 @@ export const ContainerScroll = ({
     const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
     const AnimatedSectionFront = ({ title }) => (
         <motion.div
-
-            className="flex flex-row items-center justify-center mb-10 w-full mt-20"
+            className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
         >
             <motion.span
                 animate={{rotate: [0, 2, -2, 0]}}
-                transition={{repeat: Infinity, duration: 3, ease: "easeInOut"}}
+                transition={{repeat: Infinity, duration: 10, ease: "easeInOut"}}
                 whileHover={{scale: 1.1, rotate: 5}}
                 whileTap={{scale: 0.9}}
                 className="text-4xl font-bold bg-gradient-to-r from-white to-white text-transparent bg-clip-text "
@@ -124,15 +123,14 @@ export const ContainerScroll = ({
                 {title}
             </motion.span>
             <div className="ml-5 flex flex-row">
-                <AnimatedTooltip items={frontend}/>
+                <AnimatedTooltip items={frontend} />
             </div>
         </motion.div>
-
     );
+
     const AnimatedSectionHost = ({ title }) => (
         <motion.div
-
-            className="flex flex-row items-center justify-center mb-10 w-full mt-20"
+            className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
         >
             <motion.span
                 animate={{rotate: [0, 2, -2, 0]}}
@@ -144,15 +142,14 @@ export const ContainerScroll = ({
                 {title}
             </motion.span>
             <div className="ml-5 flex flex-row">
-                <AnimatedTooltip items={hosting}/>
+                <AnimatedTooltip items={hosting} />
             </div>
         </motion.div>
-
     );
+
     const AnimatedSectionBack = ({ title }) => (
         <motion.div
-
-            className="flex flex-row items-center justify-center mb-10 w-full mt-20"
+            className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
         >
             <motion.span
                 animate={{rotate: [0, 2, -2, 0]}}
@@ -164,15 +161,14 @@ export const ContainerScroll = ({
                 {title}
             </motion.span>
             <div className="ml-5 flex flex-row">
-                <AnimatedTooltip items={backend}/>
+                <AnimatedTooltip items={backend} />
             </div>
         </motion.div>
-
     );
+
     const AnimatedSectionDB = ({ title }) => (
         <motion.div
-
-            className="flex flex-row items-center justify-center mb-10 w-full mt-20"
+            className="hidden md:flex flex-row items-center justify-center mb-10 w-full mt-20"
         >
             <motion.span
                 animate={{rotate: [0, 2, -2, 0]}}
@@ -184,15 +180,14 @@ export const ContainerScroll = ({
                 {title}
             </motion.span>
             <div className="ml-5 flex flex-row">
-                <AnimatedTooltip items={database}/>
+                <AnimatedTooltip items={database} />
             </div>
         </motion.div>
-
     );
 
     return (
         <div
-            className="h-[60rem] md:h-[60rem] flex items-center justify-center relative p-2 md:p-20"
+            className="h-[80rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
             ref={containerRef}
         >
             <div
@@ -202,7 +197,11 @@ export const ContainerScroll = ({
                 }}
             >
                 <Header translate={translate} titleComponent={titleComponent}/>
-                <div className="flex items-center justify-center"
+                <div  className={`flex ${
+                    isMobile
+                        ? "flex-col items-center justify-center" // Center on mobile
+                        : "flex-row items-center justify-between" // Spread content on larger screens
+                }`}
                      style={{
                          perspective: "1000px",
                      }}>
